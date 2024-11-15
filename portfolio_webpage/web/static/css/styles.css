@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+}
+h1 {
+    color: #333;
+}
+
+
+
+
+
+form{
+    max-width: 400px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+}
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="submit"],
+input[type="reset"],
+select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+
+}
+
+input[type="submit"]{
+    background-color: blue;
+}
+input[type="reset"]{
+    background-color: red;
+}
+
+
+
+    .grid-container {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-areas:
+    'nd nd nd nd nd nd nd nd'
+    'hd hd hd hd hd hd hd hd'
+    'td td td td td td td td'
+    'skd skd skd skd hbd hbd hbd hbd'
+    'fd fd fd fd fd fd fd fd'
+    ;
+}
+
+#navbarDiv{
+    grid-area: nd;
+}
+#headerDiv{
+    grid-area: hd;
+}
+#taglineDiv{
+    grid-area: td;
+}
+#skillsDiv{
+    grid-area: skd;
+}
+#hobbiesDiv{
+    grid-area: hbd;
+}
+#footDiv{
+    grid-area: fd;
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .grid-container {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-areas:
+    'nd nd nd nd nd nd nd nd'
+    'hd hd hd hd hd hd hd hd'
+    'td td td td td td td td'
+    'skd skd skd skd skd skd skd skd'
+    'hbd hbd hbd hbd hbd hbd hbd hbd'
+    'fd fd fd fd fd fd fd fd'
+    ;
+}
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 50%;
+    border-color: #fd7e14;
+
+}
+
+.img-container img{
+    max-width: 315px;
+    height: auto;
+    border-radius: 50%;
+    border-color: #fd7e14;
+}
+

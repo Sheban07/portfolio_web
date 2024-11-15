@@ -1,5 +1,5 @@
 """
-URL configuration for djangoProject1 project.
+URL configuration for portfolio_webpage project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -17,10 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from portfolio_webpage import web
-from portfolio_webpage.portfolio_webpage import urls
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('portfolio_webpage.web.urls')),
+    path('', include('web.urls')),
 ]

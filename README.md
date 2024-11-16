@@ -5,7 +5,7 @@ The webpage is designed to present my experience in web development and creativi
 - Responsive Desing: optimizing for all devices including mobile, tablet, and desktop.
 ## languages used
 - Backend: Django (python framework)
-- Frontend: HTNL, CSS and bootsrap
+- Frontend: HTML, CSS and bootstrap
 - Database: sqlite - django
 ## setup Instruction
 -**Clone the Repository**

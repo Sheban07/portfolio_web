@@ -10,4 +10,4 @@ The webpage is designed to present my experience in web development and creativi
 ## setup Instruction
 -**Clone the Repository**
 --------bash
-- git clone <repository-url>
+- git clone --repository-url--

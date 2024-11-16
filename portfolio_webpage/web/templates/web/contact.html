@@ -37,27 +37,28 @@
 <div id="applicationForm" class="container mt-5">
     <h2 class="text-center">Contact Me</h2>
 
-    <form method="POST" CLASS="p-4 shadow rounded bg-light" style="max-width: 400px; margin: 0; padding: 20px; border-radius: 8px" >
+    <form method="POST" CLASS="p-4 shadow rounded bg-light" style="max-width: 400px; margin: 0; padding: 20px; border-radius: 8px;" >
+        <h6 class="text-center" style="color: purple; font-style: italic">Contact Form</h6>
         {% csrf_token %}
         <div class="mb-3">
-            <label for="id_name" class="form-label">Full Name:</label>
+            <label for="id_name" class="form-label">Full Name:</label><br>
             {{ form.name }}
         </div>
         <div class="mb-3">
-            <label for="id_email" class="form-label">Email address:</label>
+            <label for="id_email" class="form-label">Email address:</label><br>
             {{ form.email }}
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
-            <label for="id_phonenumber" class="form-label">Phone Number:</label>
+            <label for="id_phonenumber" class="form-label">Phone Number:</label><br>
             {{ form.phone }}
         </div>
         <div class="mb-3">
-            <label for="id_subject" class="form-label">Subject:</label>
+            <label for="id_subject" class="form-label">Subject:</label><br>
             {{ form.subject }}
         </div>
         <div class="mb-3">
-            <label for="id_message" class="form-label">Message:</label>
+            <label for="id_message" class="form-label">Message:</label><br>
             {{ form.message }}
         </div>
 
